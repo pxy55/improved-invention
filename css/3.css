@@ -1,0 +1,254 @@
+body{
+	background-color: black;
+
+}
+
+
+
+.contain{
+	margin-right: auto;
+	margin-left: auto;
+	height: 500px;
+	width: 300px;
+	text-align: center;
+	
+}
+
+
+.ssr{
+	height: 40px;
+	width: 160px;
+	position: relative;
+	margin:auto;
+	margin-top: 30px;
+	color: rgb(45 203 112);
+	text-align: left;
+	border: 2px solid white;
+
+}
+.text{
+	line-height: 40px;
+	margin-left: 15px;
+}
+.image{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	transition: transform 0.4s;
+}
+
+
+.ssr:hover .image{
+	transform: translate(20px,0px);
+	
+}
+
+
+
+.contain-image{
+	background-repeat: no-repeat;
+	-ms-transition:width 1s, height 1s, -ms-transform 1s;   /* IE 9浏览器 */
+    -moz-transition:width 1s ,height 1s, -moz-transform 1s; /*老版本火狐浏览器兼容*/
+    -o-transition:width 1s, height 1s, -o-transform 1s;/* Opera与Chrom浏览器兼容*/
+    -webkit-transition:width 1s, height 1s, -webkit-transform 1s;/*Safari浏览器兼容*/
+   	transition:width 1s ,height 1s ,transform 1s;
+}
+.contain-image:hover{
+	transform: rotate(360deg);
+		-ms-transform: rotate(360deg);	/* IE 9 */
+		-webkit-transform: rotate(360deg);	/* Safari 和 Chrome */
+		-o-transform: rotate(360deg);	/* Opera */
+		-moz-transform: rotate(360deg);	/* Firefox */
+}
+.line{
+	width: 1px;
+	height: 1px;
+}
+.line-1{
+	position: absolute;
+	background-color: black;
+	top:0px;
+	left: -200px;
+	
+}
+
+.line-2{
+	position: absolute;
+	background-color: black;
+	top:-50px;
+	left: 160px;
+}
+.line-3{
+	position: absolute;
+	background-color: black;
+	top:50px;
+	left: 360px;
+}
+.line-4{
+	position: absolute;
+	background-color: black;
+	top:100px;
+	left: 0px;
+}
+
+.ssr:hover .line-1{
+	animation:point 0.1s ease  1 alternate;
+	-webkit-animation:point 0.1s ease  1 alternate;
+}
+
+@keyframes point
+{
+0%   {left:-200px;background-color: white;}
+25%  {left: -150px; width: 15px;background-color: white;}
+50%  {left: -100px;width: 30px; background-color: white;}
+75%  {left: -50px;width: 15px; background-color: white;}
+100% {left: 0px;width: 10px; background-color: white;}
+}
+
+@-moz-keyframes point
+{
+0%   {left:-200px;background-color: white;}
+25%  {left: -150px; width: 15px;background-color: white;}
+50%  {left: -100px;width: 30px; background-color: white;}
+75%  {left: -50px;width: 15px; background-color: white;}
+100% {left: 0px;width: 10px; background-color: white;}
+}
+
+@-webkit-keyframes point 
+{
+0%   {left:-200px;background-color: white;}
+25%  {left: -150px; width: 15px;background-color: white;}
+50%  {left: -100px;width: 30px; background-color: white;}
+75%  {left: -50px;width: 15px; background-color: white;}
+100% {left: 0px;width: 10px; background-color: white;}
+}
+
+@-o-keyframes point
+{
+0%   {left:-200px;background-color: white;}
+25%  {left: -150px; width: 15px;background-color: white;}
+50%  {left: -100px;width: 30px; background-color: white;}
+75%  {left: -50px;width: 15px; background-color: white;}
+100% {left: 0px;width: 10px; background-color: white;}
+}
+.ssr:hover .line-2{
+	animation:point-b 0.1s ease  1 alternate;
+	-webkit-animation:point-b 0.1s ease  1 alternate;
+}
+
+@keyframes point-b
+{
+0%   {top:-50;background-color: white;}
+25%  {top:-40; height: 15px;background-color: white;}
+50%  {top:-30;height: 30px; background-color: white;}
+75%  {top:-20;height: 15px; background-color: white;}
+100% {top:0;height: 10px; background-color: white;}
+}
+
+@-moz-keyframes point-b
+{
+0%   {top:-50;background-color: white;}
+25%  {top:-40; height: 15px;background-color: white;}
+50%  {top:-30;height: 30px; background-color: white;}
+75%  {top:-20;height: 15px; background-color: white;}
+100% {top:0;height: 10px; background-color: white;}
+}
+
+@-webkit-keyframes point-b 
+{
+0%   {top:-50;background-color: white;}
+25%  {top:-40; height: 15px;background-color: white;}
+50%  {top:-30;height: 30px; background-color: white;}
+75%  {top:-20;height: 15px; background-color: white;}
+100% {top:0;height: 10px; background-color: white;}
+}
+
+@-o-keyframes point-b
+{
+0%   {top:-50;background-color: white;}
+25%  {top:-40; height: 15px;background-color: white;}
+50%  {top:-30;height: 30px; background-color: white;}
+75%  {top:-20;height: 15px; background-color: white;}
+100% {top:0;height: 10px; background-color: white;}
+}
+
+.ssr:hover .line-3{
+	animation:point-c 0.1s ease  1 alternate;
+	-webkit-animation:point-c 0.1s ease  1 alternate;
+}
+
+@keyframes point-c
+{
+0%   {left:360px;background-color: white;}
+25%  {left: 310px; width: 15px;background-color: white;}
+50%  {left: 260px;width: 30px; background-color: white;}
+75%  {left: 210px;width: 15px; background-color: white;}
+100% {left: 160px;width: 10px; background-color: white;}
+}
+
+@-moz-keyframes point-c
+{
+0%   {left:360px;background-color: white;}
+25%  {left: 310px; width: 15px;background-color: white;}
+50%  {left: 260px;width: 30px; background-color: white;}
+75%  {left: 210px;width: 15px; background-color: white;}
+100% {left: 160px;width: 10px; background-color: white;}
+}
+
+@-webkit-keyframes point-c 
+{
+0%   {left:360px;background-color: white;}
+25%  {left: 310px; width: 15px;background-color: white;}
+50%  {left: 260px;width: 30px; background-color: white;}
+75%  {left: 210px;width: 15px; background-color: white;}
+100% {left: 160px;width: 10px; background-color: white;}
+}
+
+@-o-keyframes point-c
+{
+0%   {left:360px;background-color: white;}
+25%  {left: 310px; width: 15px;background-color: white;}
+50%  {left: 260px;width: 30px; background-color: white;}
+75%  {left: 210px;width: 15px; background-color: white;}
+100% {left: 160px;width: 10px; background-color: white;}
+}
+.ssr:hover .line-4{
+	animation:point-d 0.1s ease  1 alternate;
+	-webkit-animation:point-d 0.1s ease  1 alternate;
+}
+
+@keyframes point-d
+{
+0%   {top:100px;background-color: white;}
+25%  {top:95px; height: 15px;background-color: white;}
+50%  {top:80px;height: 30px; background-color: white;}
+75%  {top:65px;height: 15px; background-color: white;}
+100% {top:50px;height: 10px; background-color: white;}
+}
+
+@-moz-keyframes point-d
+{
+0%   {top:100px;background-color: white;}
+25%  {top:95px; height: 15px;background-color: white;}
+50%  {top:80px;height: 30px; background-color: white;}
+75%  {top:65px;height: 15px; background-color: white;}
+100% {top:50px;height: 10px; background-color: white;}
+}
+
+@-webkit-keyframes point-d 
+{
+0%   {top:100px;background-color: white;}
+25%  {top:95px; height: 15px;background-color: white;}
+50%  {top:80px;height: 30px; background-color: white;}
+75%  {top:65px;height: 15px; background-color: white;}
+100% {top:50px;height: 10px; background-color: white;}
+}
+
+@-o-keyframes point-d
+{
+0%   {top:100px;background-color: white;}
+25%  {top:95px; height: 15px;background-color: white;}
+50%  {top:80px;height: 30px; background-color: white;}
+75%  {top:65px;height: 15px; background-color: white;}
+100% {top:50px;height: 10px; background-color: white;}
+}
